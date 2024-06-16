@@ -51,7 +51,7 @@ function Body(props) {
                   className="btn btn-success"
                   onClick={() => {
                     btnFn((prev) => !prev);
-                    props.cartFn((current) => current + 1);
+                    props.cartFn((current) => ++current);
                   }}
                 >
                   Add to Cart
@@ -61,7 +61,7 @@ function Body(props) {
                   className="btn btn-danger"
                   onClick={() => {
                     btnFn((prev) => !prev);
-                    props.cartFn((current) => current - 1);
+                    props.cartFn((current) => --current);
                   }}
                 >
                   Remove Cart
